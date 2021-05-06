@@ -42,4 +42,17 @@ On our machine, the verification accuracy of the pretrained models is shown in t
 | VGG16\_bn  | 73.360% |
 | VGG19  | 72.376% |
 | VGG19\_bn  | 74.218% |
-               
+
+## Neural network noise estimation
+Neural network noise estimation includes two parts, one is data acquisition, the other is data fitting analysis.
+
+According to the method described in the article, the error data is collected, and the code is
+
+After the collection, the corresponding NPY file is generated and analyzed by jupyter notebook
+
+## KFNN FUSION
+KFNN fusion also includes two parts, weight calculation and weighted fusion.
+
+In the weight calculation, we use matlab to complete the code and get the corresponding weighting coefficient. To calculate the parameters of different neural networks, we only need to modify the corresponding R value.
+
+Finally, it is weighted fusion. For details, please refer to .py.
