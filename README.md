@@ -46,13 +46,23 @@ On our machine, the verification accuracy of the pretrained models is shown in t
 ## Neural network noise estimation
 Neural network noise estimation includes two parts, one is data acquisition, the other is data fitting analysis.
 
-According to the method described in the article, the error data is collected, and the code is
+According to the method described in the article, the error data is collected, and the code is `./imagenet_eval.py`, 
+for example, run
 
-After the collection, the corresponding NPY file is generated and analyzed by jupyter notebook
+`python  ./imagenet_eval.py --data ImageNet -a vgg16 -b 100 -e`
+
+Using the above method, the evaluation results (npy file) of all neural networks are obtained. Then the move the results  to `Noise Estimation` folder.
+
+In `./Noise Estimation`,  the detailed code of evaluating the neural network fitting is in the [NNNE_ImageNet100.ipynb](https://github.com/KFNN/KFNN-Master/blob/main/Noise_Estimation/NNNE_ImageNet100.ipynb), and the fitting image is saved in the `./Noise Estimation/save` folder.
+
+The code of normality test are in [Normality test.ipynb](https://github.com/KFNN/KFNN-Master/blob/main/Noise_Estimation/Normality%20test.ipynb)
 
 ## KFNN FUSION
 KFNN fusion also includes two parts, weight calculation and weighted fusion.
 
-In the weight calculation, we use matlab to complete the code and get the corresponding weighting coefficient. To calculate the parameters of different neural networks, we only need to modify the corresponding R value.
+In the weight calculation, we use matlab to complete the code and get the corresponding weighting coefficient. To calculate the parameters of different neural networks, we only need to modify the corresponding R value. The relevant code is in [./KFNN_FUSION/FUSE_2_OK.m](https://github.com/KFNN/KFNN-Master/blob/main/KFNN_FUSION/FUSE_2_OK.m). 
 
-Finally, it is weighted fusion. For details, please refer to .py.
+Finally, it is weighted fusion. For details, please refer to [KFNN_Evaluate.ipynb](https://github.com/KFNN/KFNN-Master/blob/main/KFNN_FUSION/KFNN_Evaluate.ipynb)
+
+## Reference
+[Cadene/pretrained-models.pytorch](https://github.com/Cadene/pretrained-models.pytorch)
