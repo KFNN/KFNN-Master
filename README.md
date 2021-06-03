@@ -86,7 +86,7 @@ In the weight calculation, we use matlab to complete the code and get the corres
 Finally, it is weighted fusion. For details, please refer to [KFNN_Evaluate.ipynb](https://github.com/KFNN/KFNN-Master/blob/main/KFNN_FUSION/KFNN_Evaluate.ipynb)
 
 ## Other Description
-In addition to Imagenet, we also verify the performance of KFNN in CIFAR-10 and VOC. The specific experimental results can be found in the experiment.
+In addition to Imagenet, we also verify the performance of KFNN in CIFAR-10. The specific experimental results can be found in the experiment.
 
 This open-source code can only be used for academic research.
 
