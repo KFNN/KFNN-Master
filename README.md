@@ -57,6 +57,27 @@ In `./Noise Estimation`,  the detailed code of evaluating the neural network fit
 
 The code of normality test are in [Normality test.ipynb](https://github.com/KFNN/KFNN-Master/blob/main/Noise_Estimation/Normality%20test.ipynb)
 
+According to the neural network observer variance determination method, the calculated observation error is as follows.
+
+|  pretrained model   | R |  
+|  ----   | ----  |     
+| NASNetlarge  | 0.0306 |     
+| AlexNet  | 0.1891 |
+| DenseNet121  | 0.0654 |
+| ResNet18  | 0.0915 |
+| ResNet34  | 0.0712 |
+| ResNet50  | 0.0570 |
+| ResNet101  | 0.0512 |
+| ResNet152  | 0.0470 |
+| VGG11  | 0.0960 |
+| VGG11\_bn  | 0.0878 |
+| VGG13  | 0.0904 |
+| VGG13\_bn  | 0.0807 |
+| VGG16  | 0.0807 |
+| VGG16\_bn  | 0.0710 |
+| VGG19  | 0.0763 |
+| VGG19\_bn  | 0.0665 |
+
 ## KFNN FUSION
 KFNN fusion also includes two parts, weight calculation and weighted fusion.
 
